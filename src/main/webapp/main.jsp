@@ -9,12 +9,13 @@
     <spring:url value="/resources/core/css/hello.css" var="coreCss" />
     <spring:url value="/resources/core/css/bootstrap.min.css"
                 var="bootstrapCss" />
-    <link href="${bootstrapCss}" rel="stylesheet" />
-    <link href="${coreCss}" rel="stylesheet" />
+<%--    <link href="${bootstrapCss}" rel="stylesheet" />--%>
+<%--    <link href="${coreCss}" rel="stylesheet" />--%>
 
-    <spring:url value="/js/jquery-easyui-1.9.4/jquery.min.js"
-                var="jqueryJs" />
-    <script src="${jqueryJs}"></script>
+<%--    <spring:url value="/js/jquery-easyui-1.9.4/jquery.min.js"--%>
+<%--                var="jqueryJs" />--%>
+<%--    <script src="${jqueryJs}"></script>--%>
+    <jsp:include page="common/easyui.jsp"></jsp:include>
 </head>
 
 <nav class="navbar navbar-inverse">
@@ -73,7 +74,7 @@
         $("#search-form").submit(function(event) {
             // Disble the search button
             enableSearchButton(false);
-
+            console.log("search info----");
             // Prevent the form from submitting via the browser.
             event.preventDefault();
 
