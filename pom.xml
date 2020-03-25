@@ -61,11 +61,11 @@
 <!--            <version>3.4.1</version>-->
 <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>org.webjars.bowergithub.dreamerlxb</groupId>-->
-<!--            <artifactId>jquery-easyui</artifactId>-->
-<!--            <version>1.9.4</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.webjars.bowergithub.dreamerlxb</groupId>
+            <artifactId>jquery-easyui</artifactId>
+            <version>1.9.4</version>
+        </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -99,6 +99,9 @@
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>3.2.2</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>

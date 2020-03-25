@@ -4,21 +4,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <script src="/static/js/jquery-easyui-1.9.4/jquery.min.js" type="text/javascript"></script>
     <title>Spring MVC 4 + Ajax Hello World</title>
 
-    <c:url var="home" value="/" scope="request" />
 
-<%--    <spring:url value="/resources/core/css/hello.css" var="coreCss" />--%>
-<%--    <spring:url value="/resources/core/css/bootstrap.min.css"--%>
-<%--                var="bootstrapCss" />--%>
-<%--    <link href="${bootstrapCss}" rel="stylesheet" />--%>
-<%--    <link href="${coreCss}" rel="stylesheet" />--%>
-
-    <spring:url value="/js/jquery-easyui-1.9.4/jquery.min.js"
-                var="jqueryJs" />
-    <script src="${jqueryJs}"></script>
 </head>
-
+<body>
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
