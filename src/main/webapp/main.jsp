@@ -4,18 +4,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Spring MVC 4 + Ajax Hello World</title>
+
     <c:url var="home" value="/" scope="request" />
 
-    <spring:url value="/resources/core/css/hello.css" var="coreCss" />
-    <spring:url value="/resources/core/css/bootstrap.min.css"
-                var="bootstrapCss" />
+<%--    <spring:url value="/resources/core/css/hello.css" var="coreCss" />--%>
+<%--    <spring:url value="/resources/core/css/bootstrap.min.css"--%>
+<%--                var="bootstrapCss" />--%>
 <%--    <link href="${bootstrapCss}" rel="stylesheet" />--%>
 <%--    <link href="${coreCss}" rel="stylesheet" />--%>
 
-<%--    <spring:url value="/js/jquery-easyui-1.9.4/jquery.min.js"--%>
-<%--                var="jqueryJs" />--%>
-<%--    <script src="${jqueryJs}"></script>--%>
-    <jsp:include page="common/easyui.jsp"></jsp:include>
+    <spring:url value="/js/jquery-easyui-1.9.4/jquery.min.js"
+                var="jqueryJs" />
+    <script src="${jqueryJs}"></script>
 </head>
 
 <nav class="navbar navbar-inverse">
@@ -72,9 +73,10 @@
     jQuery(document).ready(function($) {
 
         $("#search-form").submit(function(event) {
+
             // Disble the search button
             enableSearchButton(false);
-            console.log("search info----");
+
             // Prevent the form from submitting via the browser.
             event.preventDefault();
 
@@ -118,8 +120,8 @@
     }
 
     function display(data) {
-        var json = "<h4>Ajax Response</h4>&lt;pre&gt;"
-            + JSON.stringify(data, null, 4) + "&lt;/pre&gt;";
+        var json = "<h4>Ajax Response</h4><pre>"
+            + JSON.stringify(data, null, 4) + "</pre>";
         $('#feedback').html(json);
     }
 </script>

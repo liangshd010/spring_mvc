@@ -1,7 +1,7 @@
 <html>
 <body>
 
-    <jsp:include page="./main.jsp" flush="true"/>
+    <jsp:include page="./main.jsp"/>
 
 </body>
 </html>
