@@ -11,3 +11,4 @@
 <script src="<%=request.getContextPath()%>/static/js/jquery-easyui-1.9.4/locale/easyui-lang-zh_CN.js" charset="UTF-8" TYPE="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/static/js/jquery-easyui-1.9.4/themes/default/easyui.css"/>
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/static/js/jquery-easyui-1.9.4/themes/icon.css"/>
+<script src="<%=request.getContextPath()%>/static/js/jquery-easyui-1.9.4/plugins/jquery.combobox.js"/>

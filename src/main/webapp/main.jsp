@@ -5,8 +5,9 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<%--    <script src="./static/js/jquery-easyui-1.9.4/jquery.min.js" type="text/javascript"></script>--%>
     <jsp:include page="common/easyui.jsp"></jsp:include>
+    <jsp:include page="common/meta.jsp"></jsp:include>
+
     <title>LSD</title>
     <script>
         function showMessage() {
