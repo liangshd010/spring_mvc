@@ -12,6 +12,5 @@ public class MainController {
         //model.addAttribute("message","hello world");
         System.out.println("ooooo");
         return "/WEB-INF/jsp/hello.jsp";
-
     }
 }
